@@ -43,7 +43,7 @@
 		234F4C381BDE0B6600A58EF7 /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		234F4C3A1BDE0B9200A58EF7 /* StringAdditionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAdditionsTests.swift; sourceTree = "<group>"; };
 		234F4C3C1BDE0D1000A58EF7 /* JSONPostRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONPostRouter.swift; sourceTree = "<group>"; };
-		AAAB69201C6DC2BC006FA6C6 /* RequestKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RequestKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAB69201C6DC2BC006FA6C6 /* RequestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RequestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB69221C6DC2BC006FA6C6 /* RequestKitOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestKitOSX.h; sourceTree = "<group>"; };
 		AAAB69241C6DC2BC006FA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 			children = (
 				234F4C1C1BDDF64300A58EF7 /* RequestKit.framework */,
 				234F4C261BDDF64300A58EF7 /* RequestKitTests.xctest */,
-				AAAB69201C6DC2BC006FA6C6 /* RequestKitOSX.framework */,
+				AAAB69201C6DC2BC006FA6C6 /* RequestKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			);
 			name = RequestKitOSX;
 			productName = RequestKitOSX;
-			productReference = AAAB69201C6DC2BC006FA6C6 /* RequestKitOSX.framework */;
+			productReference = AAAB69201C6DC2BC006FA6C6 /* RequestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -458,7 +458,7 @@
 		AAAB69251C6DC2BC006FA6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -470,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.RequestKitOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RequestKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -479,7 +479,7 @@
 		AAAB69261C6DC2BC006FA6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -491,7 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.RequestKitOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RequestKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -534,6 +534,7 @@
 				AAAB69261C6DC2BC006FA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
